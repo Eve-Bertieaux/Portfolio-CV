@@ -1,0 +1,173 @@
+/*général*/
+
+body
+{
+    font-family: 'Lato', Times, serif, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: bold;
+}
+
+img 
+{
+    max-width: 100%;
+    height: auto;
+}
+
+section
+{
+    padding: 65px 0 80px 0;
+}
+
+section .heading 
+{
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+
+
+
+/*About*/
+#about
+{
+    background: #deb887;
+}
+.profile-picture{
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+#about .heading h1
+{
+  color: whitesmoke;  
+  margin-bottom: 20px;
+}
+
+#about .heading h3
+{
+    color: #de8d87;
+}
+.button1
+{   font-weight: bold;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 18px 50px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in 0s;
+}
+
+.button1:hover
+{
+    background: whitesmoke;
+    color: #deb887;
+}
+
+/*portfolio*/
+
+#portfolio
+{
+    background: #deb887;
+}
+
+#portfolio .heading h2
+{
+    color: whitesmoke;
+    font-size: 45px;
+    
+}
+#portfolio .heading p
+{
+    color: #de8d87;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+#porfolio img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#portfolio .col-md-4
+{
+    margin-bottom: 100px;
+}
+
+
+
+
+/*tests rotation images pas gagné*/
+
+.img-flip-container {
+    perspective: 1000px;
+    margin: 25px;
+    padding: 45px;
+}
+
+.img-flip-card {
+    width: 100%;
+    height: auto;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+}
+
+.img-flip-card:hover {
+    transform: rotateY(90deg);
+}
+
+.img-flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform: rotateY(0deg);
+    transition: transform 0.3s;
+}
+
+.img-flip-card:hover .img-flip-card-inner {
+    transform: rotateY(90deg);
+}
+
+.img-flip-card-front,
+.img-flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.img-flip-card-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/portfoliorabit.jpg);
+}
+
+.img-flip-card-back {
+    transform: rotateY(90deg);
+    background: url(images/freedom.png);
+}
+
+/*footer*/
+a{
+    margin: 15px;
+}
+
+footer
+{
+    background: #de8d87;
+    margin: 20px;
+    padding: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+
+
+
